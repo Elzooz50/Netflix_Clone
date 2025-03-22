@@ -1,0 +1,12 @@
+.movie-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  border-radius: 13px;
+}
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 5px;
+  color: rgb(255, 0, 0);
+}

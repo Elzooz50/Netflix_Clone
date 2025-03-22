@@ -1,0 +1,44 @@
+.browse-container {
+  background-color: #000000;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.featured-section {
+  background-image: url('https://wallpaperaccess.com/full/873687.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.featured-content h1 {
+  font-size: 3rem;
+}
+
+.btn-play,
+.btn-info {
+  background-color: #e50914;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.4s;
+}
+.btn-play:hover,
+.btn-info:hover {
+  background-color: #80030a;
+}

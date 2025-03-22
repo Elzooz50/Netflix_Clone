@@ -1,0 +1,54 @@
+<div class="browse-container">
+  <app-header></app-header>
+
+  <!-- Featured Content Carousel -->
+  <div class="featured-section">
+    <div class="featured-content">
+      <!-- <h1>Featured Movie</h1>
+      <p>Catch the latest blockbuster now!</p> -->
+      <!-- <h1>{{bannerMovie.original_title}}</h1>
+      <p>{{bannerMovie.overview}}</p> -->
+      <button class="btn-play btn" (click)="playVideo()">Play</button>
+      <button class="btn-info btn">More Info</button>
+    </div>
+  </div>
+
+  <!-- Movie Grid Section -->
+  <div class="movie-categories">
+    <app-movie-category id="popular" [title]="'Popular'"   [movieList]="popularMovies" ></app-movie-category>
+    <app-movie-category id="topRated" [title]="'Top Rated'" [movieList]="topRatedMovies" ></app-movie-category>
+    <app-movie-category id="nowPlaying" [title]="'Now Playing'" [movieList]="nowPlayingMovies" ></app-movie-category>
+    <app-movie-category id="upcoming" [title]="'Upcoming'" [movieList]="upcomingMovies" ></app-movie-category>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+    @if (bannerMovie && bannerMovie.videoKey) {
+      <iframe width="745" height="480" [src]="domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/'+ bannerMovie.videoKey +'?autoPlay=1')" frameborder="0" autoPlay="true"></iframe>
+    }
+
+
+
+-->

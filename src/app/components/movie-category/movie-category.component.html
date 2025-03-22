@@ -1,0 +1,17 @@
+<div>
+  <h3>{{title}}</h3> <!-- Displays the title, which is likely passed as a variable from the component -->
+
+  <div class="movie-card"> <!-- Wrapper for the movie cards -->
+    <!-- Iterates over the movieList array and displays each movie using the movie-card component -->
+    @for (movie of movieList; track movie) {
+      <!-- Passes each movie from movieList to the movie-card component as an input -->
+      <app-movie-card [movie]="movie"></app-movie-card>
+    }
+    <!-- If movieList is empty or null, display a loading message -->
+    @empty {
+      <p>Loading....</p> <!-- Shows a loading message when movie data is not yet available -->
+    }
+  </div>
+</div>
+
+

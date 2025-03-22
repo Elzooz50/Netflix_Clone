@@ -1,0 +1,18 @@
+<header class="header">
+  <div class="logo">
+    <img [src]="logoUrl" alt="Logo" />
+  </div>
+  <nav class="nav-links">
+    <ul>
+      <li><a >Home</a></li>
+      <li><a (click)="scrollToSection('popular')">Popular</a></li>
+      <li><a (click)="scrollToSection('topRated')">Top Rated</a></li>
+      <li><a (click)="scrollToSection('nowPlaying')">Now Playing</a></li>
+      <li><a (click)="scrollToSection('upcoming')">Upcoming</a></li>
+    </ul>
+  </nav>
+  <div class="profile">
+    <img src="https://wallpaperaccess.com/full/1332647.jpg" alt="User Profile" />
+  </div>
+</header>
+

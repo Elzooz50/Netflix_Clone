@@ -1,0 +1,20 @@
+<div>
+  <app-header></app-header> <!-- Component for the header of the application -->
+
+  <!-- Conditionally display iframe if bannerMovie exists and has a videoKey -->
+  <div *ngIf="bannerMovie && bannerMovie.videoKey">
+    <!-- Embeds a YouTube video, using the videoKey from bannerMovie and bypassing security risks -->
+    <iframe width="800" height="400"
+      [src]="domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + bannerMovie.videoKey + '?autoPlay=1')"
+      frameborder="0"
+      autoplay="true"
+      style="border:5px solid white; display: flex; margin-top: 150px; margin-bottom: 150px; border-radius: 10px;">
+    </iframe>
+  </div>
+</div>
+
+<!-- Displays a loading message if the videoUrl is not yet available -->
+<div *ngIf="!videoUrl">
+  <p>Loading trailer...</p>
+</div>
+

@@ -1,0 +1,42 @@
+<div class="login-container">
+
+  <div class="login-background">
+    <img [src]="bgUrl" alt="background" class="background-image" />
+    <div class="overlay"></div>
+  </div>
+
+  <div class="login-box">
+
+
+    <form class="login-form" (submit)="onSubmit()">
+      <h2>Login to Your Account</h2>
+      <div class="input-group">
+        <input type="email" name="email" [(ngModel)]="email" placeholder="Email address" required />
+      </div>
+      <div class="input-group">
+        <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required />
+      </div>
+        <button type="submit" class="submit-btn">Login</button>
+
+      <div class="help-section">
+        <div>
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+          <a href="#">Forgot Password?</a>
+      </div>
+
+      <div class="sign-up-now">
+        <span>Don't have an account?</span>
+        <a href="#">Sign up here.</a>
+      </div>
+
+      <div class="captcha-notice">
+        <span>This page is protected by security measures to ensure your privacy.</span>
+        <a href="#">Learn more.</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
